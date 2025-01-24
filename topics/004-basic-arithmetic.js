@@ -15,7 +15,7 @@ console.log(divisionByZero);
 
 var inc = 1;
 inc++;
-console.log(inc)
+console.log(inc);
 
 var dec = 1;
 dec--;
