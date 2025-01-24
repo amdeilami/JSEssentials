@@ -45,3 +45,20 @@ console.log(sentence);
 // length attribute
 var lovelyName = "Ada Lovelace";
 console.log(lovelyName+" has "+lovelyName.length+" characters");
+
+// just note that semicolon is not mandatory, but I'm using it
+
+// string indexing and access
+var firstCharacter = lovelyName[0];
+var thirdCharacter = lovelyName[2];
+var lastCharacter = lovelyName[lovelyName.length-1];
+console.log(firstCharacter+thirdCharacter);
+
+// strings are immutable, you can't alter a single character
+var helloWorld = "Jello World!";
+helloWorld[0] = "H";
+
+console.log(helloWorld);
+
+helloWorld = "Hello World!";
+console.log(helloWorld);
