@@ -56,3 +56,59 @@ function testStrictNotEqual(val) {
 }
 
 console.log(testStrictNotEqual('10'));
+
+/* other comparison operators:
+    greater than    >
+    less than       <
+    greater than or equal   >=
+    less than or equal      <=
+*/
+
+// logical AND (&&) and OR (||) operators
+function betweenTwoNumbers (num1, num2, val) {
+    // making sure num1 is smaller or equal
+    if (num1 > num2) {
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+    }
+
+    if (num1 <= val && num2 >= val) {
+        return true;
+    }
+    return false;
+}
+
+console.log("Is 5 between 6 and 9? "+betweenTwoNumbers(9,6,5));
+
+function testLogicalOrOperator(val) {
+if (val < 10 || val > 20) {
+    return "Outside";
+}
+return "Inside";
+}
+
+console.log(testLogicalOrOperator(15));
+
+// `else`: when the if-stateent condition evaluates to false, else block runs
+function testElse(val) {
+    if (val < 5) {
+        return "value is less than 5";
+    } else {
+        return "value is greater than or equal to 5";
+    }
+}
+console.log(testElse(6));
+
+// `else if` can be used to chain the conditions together
+function testElseIf(val) {
+    if (val > 10) {
+        return "value is greater than 10";
+    } else if (val < 5) {
+        return "value is less than 5";
+    } else {
+        return "value is between 10 and 5";
+    }
+}
+
+console.log(testElseIf(7));
