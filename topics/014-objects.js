@@ -62,6 +62,24 @@ function checkProp(propValue) {
 console.log(checkProp("bark"));
 console.log(checkProp("name"));
 
+// manipulating complex objects
+var myMusic = [
+    { // an objet as an array element
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release year": 2020,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true // the last one doesn't need a comma
+    } // it's the only element in array, so no comma needed, right?
+];
+
+console.log(JSON.stringify(myMusic));
+myMusic[0]["formats"][1] = "7T";
+console.log(JSON.stringify(myMusic));
 
 
 
