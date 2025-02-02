@@ -38,3 +38,11 @@ console.log(myArray);
 var addElement = "Joe";
 myArray.unshift(addElement);
 console.log(myArray);
+
+// if we don't know wheter an array has already been defined or not, and we want to append an element to it:
+var mysteriousArray;
+console.log(mysteriousArray);
+// pushing an integer to it
+mysteriousArray = mysteriousArray || []; // this is the main point!
+mysteriousArray.push(5);
+console.log(mysteriousArray);
