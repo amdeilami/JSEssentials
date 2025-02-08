@@ -1,7 +1,7 @@
 /*
     using `const` is another way of declaring a variable, it has all the features of `let`, except that 
     it is read-only
-    It is a common convention to use only CAPITAL letters when naming constants
+    It is a common convention to use only CAPITAL letters when naming constants and `_` to separate words
 */
 const SENTENCE = "freeCodeCamp is amazing!";
 console.log(SENTENCE);
@@ -24,3 +24,21 @@ function editInPlace() {
 }
 editInPlace();
 console.log(JSON.stringify(s));
+
+// as shown above, we can mutate `const` array (and objects)
+// but what if we want to prevent mutation too?
+// we can use Object.freeze() function for that
+function freezeObject() {
+    "use strict";
+    const MATH_CONSTANT = {
+        PI: 3.14
+    };
+    Object.freeze(MATH_CONSTANT);
+    try {
+        MATH_CONSTANT["PI"] = 99;
+    } catch (ex) {
+        console.log("Err: \n"+ex);
+    }
+    return MATH_CONSTANT;
+}
+console.log(freezeObject());
