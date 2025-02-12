@@ -26,3 +26,28 @@ const LOCAL_FORECAST = {
 
 const {tomorrow: {max: maxTomorrow}} = LOCAL_FORECAST;
 console.log(maxTomorrow);
+
+/**
+ * using destructuring assignment to assign variables from arrays
+ */
+
+const [e, f] = [1, 2, 3, 4, 5, 6];
+// unlike objects, we cannot decide which array elements should be assigned to variables, they just go by order
+
+console.log(e);
+console.log(f);
+
+const [g, , h, , i] = [1, 2, 3, 4, 5]; // skipping elements
+console.log(g);
+console.log(h);
+console.log(i);
+
+// we can use these features to swap values between two variables
+let frist = 1;
+let second = 2;
+(() => {
+    [frist, second] = [second, frist];
+})();
+
+console.log(frist);
+console.log(second);
