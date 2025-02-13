@@ -51,3 +51,31 @@ let second = 2;
 
 console.log(frist);
 console.log(second);
+
+// use destructuring assignment with the Rest operator
+/**
+ * removing first two elements of an array using Rest operator (`...`)
+ */
+function removeFirstTwoElements(list) {
+    const [ , , ...arr] = list;
+    return arr;
+}
+
+const list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(removeFirstTwoElements(list1));
+
+// passing function's arguments using destructuring assignment
+const stats = {
+    max: 8.5,
+    min: 6.5,
+    standard: 4.3,
+    error: 9.1
+};
+
+const half = (() => {
+    return function jaguar({min, max}) {
+        return (max + min) / 2.0;
+    }
+})();
+
+console.log(half(stats));
