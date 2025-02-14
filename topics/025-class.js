@@ -64,3 +64,10 @@ const book = new Book("Alex");
 console.log(book.writer);
 book.writer="James";
 console.log(book.writer);
+
+
+export default class SpaceShip { // instead of using `export default` I could use `export {SpaceShip}`. See 026.
+    constructor(targetPlanet) {
+        this.targetPlanet = targetPlanet;
+    }
+}
