@@ -14,8 +14,8 @@ contains a series of scripts each with enough comments to explain new concepts a
 ## [problems](./problems/)
 contains a set of problems from [LeetCode](https://leetcode.com/), each containing a question description and a tested solution.
 
-### File naming convention
+## File naming convention
 I use kebab-case convention for naming files (all lowercase, separate words by hyphen)
 
-### Running each script
+## Running each script
 You might find several lines of ouput when running each of the scripts, feel free to change to code such that it would be easier for you to focus on a specific output instead of all other ones.
