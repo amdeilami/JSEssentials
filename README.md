@@ -1,5 +1,5 @@
 # JSEssentials
-Writing down java script essentials as various scripts in the [topics](./topics/) directory. Most of the contents are based on a video from [freeCodeCamp](https://www.freecodecamp.org/) which I really recommend to follow.
+Writing down javascript essentials as various scripts in the [topics](./topics/) directory. Most of the contents are based on a video from [freeCodeCamp](https://www.freecodecamp.org/) which I really recommend to follow.
 
 ## Who's this repository for?
 If you are an absolute beginner in programming, you might find this a litte bit challenging as it may arise several questions for you along the path. If you are already familiar with programming and want to review javascript or learn it, it can be a good source for you. You don't have to search through a video or various websites for different topics, you just need to follow the scripts based on their number (Even this is not necessary though!)
