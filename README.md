@@ -18,4 +18,4 @@ contains a set of problems from [LeetCode](https://leetcode.com/), each containi
 I use kebab-case convention for naming files (all lowercase, separate words by hyphen)
 
 ## Running each script
-You might find several lines of ouput when running each of the scripts, feel free to change to code such that it would be easier for you to focus on a specific output instead of all other ones.
+You might find several lines of ouput when running each of the scripts, feel free to change the code such that it would be easier for you to focus on a specific output instead of all other ones.
